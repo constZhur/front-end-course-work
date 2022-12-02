@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизация</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Roboto+Condensed:wght@700&family=Source+Sans+3&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--Header-->
+	<header>
+		<a href="#" class="logo"><img src="images/logo.png"></a>
+		<ul class="navbar">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="sun.html">Солнце</a></li>
+			<li><a href="planets.html">Планеты</a></li>
+			<li><a href="explore.html">Прочие небесные тела</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+		</ul>
+		<div class="main">
+			<a href="registration.html" class="user active"><i class="ri-user-fill"></i>Авторизация</a>
+			<button class="burger_button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<main>
+		<div class="login-container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="registr-title">Авторизация</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Имя пользователя" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Пароль" />
+            </div>
+            <input type="submit" value="Войти" class="btn solid" />
+            <p class="social-text">Или авторизуйтесь при помощи данных платформ</p>
+						<div class="social-media">
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </form>
+          <form action="error.html" class="sign-up-form">
+            <h2 class="registr-title">Регистрация</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Уникальное имя" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Электронная почта" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Пароль" />
+            </div>
+            <input type="submit" class="btn" value="Создать аккаунт" />
+            <p class="social-text">Или авторизуйтесь при помощи данных платформ</p>
+            <div class="social-media">
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="error.html" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Впервые здесь?</h3>
+            <p>
+              Присоединяйтесь к нам, если хотите знать всё о Солнечной системе и космических телах, составляющих её!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Продолжить
+            </button>
+          </div>
+          <img src="images/login.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Уже есть аккаунт?</h3>
+            <p>
+              Войдите в аккаунт, чтобы пользоваться дополнительными функциями, а также не пропускать обновления.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Войти
+            </button>
+          </div>
+          <img src="images/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+	</main>
+		<!--Footer-->
+		<footer>
+			<div class="footer_container">
+				<div class="sec about_us">
+					<h2>О нас</h2>
+					<p>В нашем мире бытует много противоречивых мнений: кто-то считает, что Земля – плоская, другие – что Земля является центром вселенной. Наш сайт посвящен Солнечной системе. 
+						Здесь вы можете развеять все эти мифы, а также узнать много нового и интересного.</p>
+					<ul class="sci">
+						<li><a href="error.html"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="error.html"><i class="fab fa-whatsapp"></i></a></li>
+						<li><a href="error.html"><i class="fab fa-github"></i></a></li>
+						<li><a href="error.html"><i class="fab fa-telegram"></i></a></li>
+						<li><a href="error.html"><i class="fab fa-vk"></i></a></li>
+					</ul>
+				</div>
+				<div class="sec quicklinks">
+					<h2>Полезные ссылки</h2>
+					<ul>
+						<li><a href="error.html">Правила поведения</a></li>
+						<li><a href="error.html">Наш основной сайт</a></li>
+						<li><a href="error.html">Политика конфиденциальности</a></li>
+						<li><a href="error.html">Помощь</a></li>
+						<li><a href="error.html">Условия пользования</a></li>
+						<li><a href="error.html">Связаться</a></li>
+					</ul>
+				</div>
+				<div class="sec contact">
+					<h2>Связаться с нами</h2>
+					<ul class="info">
+						<li>
+							<span><i class="fas fa-map-pin"></i></i></span>
+							<span>Россия,<br> г. Москва,<br>пр. Вернадского, 78.</span>
+						</li>
+						<li>
+							<span><i class="fas fa-phone-alt"></i></span>
+							<p id="phoneNumber"><a href="tel:+79100000000">Позвонить</a></p>
+						</li>
+						<li>
+							<span><i class="fas fa-envelope"></i></span>
+							<p id="mail"><a href="mailto:someone@gmail.com">Написать на почту</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	<div class="copyright_text">
+		<p>Все данные защищены © 2022</p>
+	</div>
+	<script src="app.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
