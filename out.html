@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>За пределами</title>
+		<link rel="stylesheet" href="swiper-bundle.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Roboto+Condensed:wght@700&family=Source+Sans+3&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="images/logo.png"></a>
+		<ul class="navbar">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="sun.html">Солнце</a></li>
+			<li><a href="planets.html">Планеты</a></li>
+			<li><a href="explore.html">Прочие небесные тела</a></li>
+			<li><a href="#" class="active">За пределами</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+		</ul>
+		<div class="main">
+			<a href="registration.html" class="user"><i class="ri-user-fill"></i>Войти</a>
+			<button class="burger_button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<main>
+		<section class="info-wrapper">
+			<div class="main-info">
+				<div class="all-text">
+					<h2>Другие звездные системы</h2>
+					<p>Наше Солнце — одна из по крайней мере 100 миллиардов звезд Млечного Пути, спиральной галактики диаметром около 100 000 световых лет.</p>
+					<p>А где мы в Млечном Пути? Наше Солнце находится рядом с небольшим частичным созвездием, называемым созвездием Ориона, расположенным между созвездиями Стрельца и Персея. Считается, что у большинства звезд в нашей галактике есть свои собственные семейства планет.</p>
+					<p>Галактика Млечный Путь — всего лишь одна из миллиардов галактик во Вселенной.</p>
+					<p>Вселенная — это огромное пространство, в котором есть все, что существует. Вселенная содержит все галактики, звезды и планеты. Точный размер Вселенной неизвестен. Ученые считают, что Вселенная все еще расширяется вовне.</p>
+				</div>
+				<img src="images/IMG_3150.png" alt="">
+			</div>
+		</section>
+		<section>
+			<h2 class="title">Фотографии Вселенной</h2>
+			<div class="slider-container">
+        <div class="image-container">
+            <img src="images/вселенная.jpg" id="content1" class="active">
+            <img src="images/вселенная2.jpg" id="content2">
+            <img src="images/вселенная3.jpg" id="content3">
+            <img src="images/вселенная4.jpg" id="content4">
+						<img src="images/вселенная5.jpg" id="content5">
+        </div>
+        <div class="dot-container">
+            <button onclick = "dot(1)"></button>
+            <button onclick = "dot(2)"></button>
+            <button onclick = "dot(3)"></button>
+            <button onclick = "dot(4)"></button>
+						<button onclick = "dot(5)"></button>
+        </div>
+        <button id="prev" onclick="prev()"> &lt; </button>
+        <button id="next" onclick="next()"> &gt; </button>
+    </div>
+		</section>
+		<section class="facts">
+			<h2 class="title">Факты о вселенной</h2>
+			<div class="facts-container">
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>01</h2>
+							<h3>БОЛЬШОЕ ОТКРЫТИЕ</h3>
+							<p>Изучение звезд Эдвином Хабблом показало, что наша галактика Млечный путь, когда-то считавшаяся всей Вселенной, на самом деле является одной из миллиардов в расширяющейся Вселенной.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>02</h2>
+							<h3>МНОГО ПУСТОТЫ</h3>
+							<p>Наша Вселенная в основном состоит из пустого пространства. Галактики и скопления галактик, из которых состоит видимая Вселенная, сосредоточены в сложном каркасе, окружающем огромные пустые пространства.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>03</h2>
+							<h3>МНОГИЕ ГАЛАКТИКИ</h3>
+							<p>Наблюдения космического телескопа Хаббл крошечного участка космоса (доля диаметра Луны) выявили более 5500 галактик.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>04</h2>
+							<h3>КОСМИЧЕСКОЕ СОСЕДСТВО</h3>
+							<p>Галактика Млечный Путь входит в локальную группу, состоящую из около 30 галактик. Ближайшая к нам крупная соседняя галактика называется Андромеда.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>05</h2>
+							<h3>БОЛЬШЕ ПЛАНЕТ, ЧЕМ ЗВЕЗД</h3>
+							<p>Мы знаем о тысячах планет , называемых экзопланетами,  вращающихся вокруг других звезд в нашей галактике. Когда вы смотрите в ночное небо, каждая звезда, которую вы видите, имеет в среднем по крайней мере одну планету.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>06</h2>
+							<h3>ОБЩАЯ СПИРАЛЬ</h3>
+							<p>Около двух третей известных галактик имеют спиралевидную форму, как наша галактика Млечный Путь. Большинство остальных имеют эллиптическую (овальную) форму, а некоторые имеют необычную форму, например, зубочистки или кольца.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>07</h2>
+							<h3>ПОБЕГ НЕВОЗМОЖЕН</h3>
+							<p>В центре нашей галактики находится сверхмассивная черная дыра. Черная дыра — это большое количество материи, упакованное на очень маленьком участке, что приводит к настолько сильному гравитационному полю, что ничто — даже свет — не может покинуть ее.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>08</h2>
+							<h3>КТО-НИБУДЬ ЕСТЬ?</h3>
+							<p>Ученые ищут другие планетные системы, которые могут иметь потенциал для жизни. Пока что Земля остается единственной планетой, на которой, как известно, есть жизнь</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2>09</h2>
+							<h3>ТЕМНАЯ МАТЕРИЯ</h3>
+							<p>Девяносто пять процентов Вселенной — это темная энергия и темная материя. Все планеты, звезды и все прочее составляют лишь оставшиеся пять процентов</p>
+						</div>
+					</div>
+				</div>
+    	</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer_container">
+			<div class="sec about_us">
+				<h2>О нас</h2>
+				<p>В нашем мире бытует много противоречивых мнений: кто-то считает, что Земля – плоская, другие – что Земля является центром вселенной. Наш сайт посвящен Солнечной системе. 
+					Здесь вы можете развеять все эти мифы, а также узнать много нового и интересного.</p>
+				<ul class="sci">
+					<li><a href="error.html"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="error.html"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="error.html"><i class="fab fa-github"></i></a></li>
+					<li><a href="error.html"><i class="fab fa-telegram"></i></a></li>
+					<li><a href="error.html"><i class="fab fa-vk"></i></a></li>
+				</ul>
+			</div>
+			<div class="sec quicklinks">
+				<h2>Полезные ссылки</h2>
+				<ul>
+					<li><a href="error.html">Правила поведения</a></li>
+					<li><a href="error.html">Наш основной сайт</a></li>
+					<li><a href="error.html">Политика конфиденциальности</a></li>
+					<li><a href="error.html">Помощь</a></li>
+					<li><a href="error.html">Условия пользования</a></li>
+					<li><a href="error.html">Связаться</a></li>
+				</ul>
+			</div>
+			<div class="sec contact">
+				<h2>Связаться с нами</h2>
+				<ul class="info">
+					<li>
+						<span><i class="fas fa-map-pin"></i></i></span>
+						<span>Россия,<br> г. Москва,<br>пр. Вернадского, 78.</span>
+					</li>
+					<li>
+						<span><i class="fas fa-phone-alt"></i></span>
+						<p id="phoneNumber"><a href="tel:+79100000000">Позвонить</a></p>
+					</li>
+					<li>
+						<span><i class="fas fa-envelope"></i></span>
+						<p id="mail"><a href="mailto:someone@gmail.com">Написать на почту</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright_text">
+		<p>Все данные защищены © 2022</p>
+	</div>
+	<script src="slider.js"></script>
+</body>
+</html>
